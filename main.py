@@ -8,7 +8,7 @@ print("Device: ",device)
 
 
 print("Training started...")
-#train.train(device)
+train.train(device)
 
 print("Testing started...")
 test.test(device)
