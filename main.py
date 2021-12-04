@@ -2,13 +2,13 @@ import torch
 import train
 import test
 
-device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Device: ",device)
 
 
 
 print("Training started...")
-train.train()
+#train.train(device)
 
 print("Testing started...")
-test.test()
+test.test(device)
