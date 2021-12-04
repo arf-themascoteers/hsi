@@ -20,6 +20,5 @@ def test():
         pred = torch.argmax(y_hat, dim=1, keepdim=True)
         correct += pred.eq(y.data.view_as(pred)).sum()
         total += x.shape[0]
-        break
 
-    print(f'Total:{total}, Correct:{correct}')
+    print(f'Total:{total}, Correct:{correct}, Accuracy:{correct/total*100:.2f}')
