@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 from torchvision import datasets, transforms
-import matplotlib.pyplot as plt
 import cnn
 
 
